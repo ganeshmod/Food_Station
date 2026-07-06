@@ -1,16 +1,21 @@
 
-import Header from './components/Header'
-import './index.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Body from './components/Body';
+import LoginForm from './components/LoginForm';
+import HomePage from './components/HomePage';
+import './index.css';
 
 function App() {
- 
-
   return (
-    <div className="min-h-screen bg-white">
-      <Header/>
-    </div>
-      
-      )
+    <BrowserRouter basename='/'>
+      <Routes>
+        <Route element={<Body />}>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/login' element={<LoginForm />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
