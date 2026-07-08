@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Mail, Lock, Eye, EyeOff, LogIn } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
@@ -19,7 +20,7 @@ export default function LoginForm() {
       <div className="w-full max-w-sm bg-white rounded-2xl shadow-lg p-6 sm:p-8">
         {/* Header */}
         <div className="flex flex-col items-center mb-6">
-          <div className="bg-[#0FA4AF] p-3 rounded-full mb-3">
+          <div className="bg-[#5c264c] p-3 rounded-full mb-3">
             <LogIn size={24} className="text-white" />
           </div>
           <h1 className="text-xl sm:text-2xl font-bold text-gray-800">
@@ -94,7 +95,7 @@ export default function LoginForm() {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-[#0FA4AF] text-white font-semibold py-2.5 rounded-lg text-sm hover:bg-[#0d8a94] transition-colors mt-2"
+            className="w-full bg-[#5c264c] text-white font-semibold py-2.5 rounded-lg text-sm hover:bg-[#0d8a94] transition-colors mt-2"
           >
             Login
           </button>
@@ -103,9 +104,9 @@ export default function LoginForm() {
         {/* Footer link */}
         <p className="text-center text-sm text-gray-500 mt-6">
           Don't have an account?{" "}
-          <a href="#" className="text-[#0FA4AF] font-semibold hover:underline">
+          <Link to="/signup" className="text-[#0FA4AF] font-semibold hover:underline">
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </div>

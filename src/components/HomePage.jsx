@@ -41,10 +41,10 @@ export default function HomePage() {
   };
 
   return (
-    <section className="sm:px-6 lg:px-8">
+    <section className="sm:px-6 lg:px-7">
    
         {/* Carousel */}
-        <div className="relative mt-8 overflow-hidden rounded-2xl h-auto sm:h-80 lg:h-96">
+        <div className="relative m-0 overflow-hidden rounded-2xl h-auto sm:h-80 lg:h-96">
           {slides.map((slide, index) => (
             <div
               key={index}

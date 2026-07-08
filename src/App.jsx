@@ -4,6 +4,7 @@ import Body from './components/Body';
 import LoginForm from './components/LoginForm';
 import HomePage from './components/HomePage';
 import './index.css';
+import SignUp from './utils/SignUp';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route element={<Body />}>
           <Route path='/' element={<HomePage />} />
           <Route path='/login' element={<LoginForm />} />
+          <Route path='/signup' element={<SignUp />} />
         </Route>
       </Routes>
     </BrowserRouter>
