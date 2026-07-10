@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Beverage from "../components/Beverage";
+import Plate from "../components/Plate";
 
 const slides = [
   {
@@ -101,6 +103,8 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+        <Beverage/>
+        <Plate/>
         
       
     </section>

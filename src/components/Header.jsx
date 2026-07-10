@@ -15,7 +15,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-[#5c264c] w-full shadow-md relative  z-50">
+    <header className="bg-[#5c264c] w-full shadow-md relative   z-50">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between gap-4">
         {/* Column 1: Logo */}
         <div className="flex items-center gap-2 shrink-0">

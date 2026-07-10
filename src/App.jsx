@@ -2,9 +2,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Body from './components/Body';
 import LoginForm from './components/LoginForm';
-import HomePage from './components/HomePage';
+
 import './index.css';
 import SignUp from './utils/SignUp';
+import HomePage from './Pages/HomePage';
 
 function App() {
   return (
