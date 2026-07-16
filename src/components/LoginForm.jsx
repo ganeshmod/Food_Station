@@ -4,15 +4,26 @@ import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({ email: "", password: "" });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  
+    setFormData((prev)=>(
+      {
+        ...prev,
+        [e.target.name]:e.target.value
+      }
+    ))
   };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Login data:", formData);
+     setLoading(true);
+      
+   
+
   };
 
   return (
@@ -97,7 +108,7 @@ export default function LoginForm() {
             type="submit"
             className="w-full bg-[#5c264c] text-white font-semibold py-2.5 rounded-lg text-sm hover:bg-[#0d8a94] transition-colors mt-2"
           >
-            Login
+          {loading ? "Logging in..." : "Login"}
           </button>
         </form>
 
