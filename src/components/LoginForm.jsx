@@ -106,10 +106,7 @@ export default function LoginForm() {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-[#5c264c] text-white font-semibold py-2.5 rounded-lg text-sm hover:bg-[#0d8a94] transition-colors mt-2"
-          >
-          {loading ? "Logging in..." : "Login"}
-          </button>
+            className="w-full bg-[#5c264c] text-white font-semibold py-2.5 rounded-lg text-sm hover:bg-[#4a1e3d] transition-colors mt-2\">\n          {loading ? "Logging in..." : "Login"}\n          </button>
         </form>
 
         {/* Footer link */}
